@@ -1,0 +1,10 @@
+.control{
+    background: #fff;
+    height: 50px;
+}
+
+input{
+    border: solid #000 2px;
+    width: 1306px;
+    height: 54px;
+}
