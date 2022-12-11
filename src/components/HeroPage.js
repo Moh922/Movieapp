@@ -1,6 +1,6 @@
 import classes from "./HeroPage.module.css";
 import { useRef } from "react";
-import { useHistory } from "react";
+import { useHistory } from "react-router-dom";
 
 
 function HeroPageSection(props) {
@@ -54,9 +54,41 @@ function HeroPageSection(props) {
          <div className={classes.form}>
          <form className={classes.form} onSubmit={submitHandler}>
          <h3>Search</h3>
-         <input type="text" required id="image" ref={imageInputRef} onSubmit={onSearchMovie} />
+         <input type="text" required id="image" ref={imageInputRef} onClick={onSearchMovie} />
          </form>
          </div>
+
+         <div className={classes.movies}>
+            <card className={classes.cards}>
+                <img src={props.imgae} alt={props.title}></img>
+            </card>
+            <card className={classes.cards}>
+                <img src={props.imgae} alt={props.title}></img>
+            </card>
+            <card className={classes.cards}>
+                <img src={props.imgae} alt={props.title}></img>
+            </card>
+            <card className={classes.cards}>
+                <img src={props.imgae} alt={props.title}></img>
+            </card>
+            <card className={classes.cards}>
+                <img src={props.imgae} alt={props.title}></img>
+            </card>
+            <card className={classes.cards}>
+                <img src={props.imgae} alt={props.title}></img>
+            </card>
+            <card className={classes.cards}>
+                <img src={props.imgae} alt={props.title}></img>
+            </card>
+            <card className={classes.cards}>
+                <img src={props.imgae} alt={props.title}></img>
+            </card>
+            <card className={classes.cards}>
+                <img src={props.imgae} alt={props.title}></img>
+            </card>
+         </div>
+
+
      </section>
     )
     
